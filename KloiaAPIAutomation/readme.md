@@ -13,7 +13,7 @@
   **Scenario: config print task**</br>
       * print appId</br>
 
-  **Scenario: printing JSON file**
+  **Scenario: printing JSON file**</br>
       * def myJson =</br>
        """</br>
            {</br>
@@ -69,7 +69,7 @@
 ![task2](https://user-images.githubusercontent.com/88919177/145683936-8da60236-1c72-4912-9e62-d657fcbde87a.gif)
 </br>
   ## Kata_2
-    Background: </br>
+    Background
    *Given* url baseUrl</br>
 </br>
   **Scenario: post request with json**</br>
