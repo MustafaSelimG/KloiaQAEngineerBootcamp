@@ -2,7 +2,7 @@
 > *includes* Selenium , JUnit , POM , Test Automation
 
 
-## Kata_1 [➡️](src/test/java/bootcamp/kata_1)
+## Kata_1
 
  ### Task1.1
    - Basic navigation
@@ -39,7 +39,7 @@
   
   ![kata1 4](https://user-images.githubusercontent.com/88919177/145373265-031cff08-7f9d-4651-b81a-983246230e43.gif)
 
-## Kata_2 [➡️](src/test/java/bootcamp/kata_2)
+## Kata_2
 
  ### Task2.1
   - Before -> setup
@@ -77,7 +77,7 @@
   ![kata2 4](https://user-images.githubusercontent.com/88919177/145373398-cbdb3437-95db-406d-8601-2a35e7fa6147.gif)
 
 
-## Kata_3 [➡️](src/test/java/bootcamp/kata_3)
+## Kata_3
 
  ### Task3
   - Open bestbuy.com
