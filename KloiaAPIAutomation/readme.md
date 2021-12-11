@@ -117,3 +117,30 @@
       </br>
       
 ![task3](https://user-images.githubusercontent.com/88919177/145688684-9a0f9c5e-8b4d-4995-8f3c-13aa91becf0f.gif)
+
+</br>
+
+  ## Kata_3
+  **Scenario: reading data from json** </br>
+    * def myVar = read('classpath:data/myJson.json') </br>
+    * print myVar</br>
+</br>
+  **Scenario: writing data to json**</br>
+    * def myVar = read('classpath:data/myJson.json')</br>
+    * set myVar.name = "demo"</br>
+    * print myVar</br>
+</br>
+  **Scenario Outline: printing table variables**</br>
+    * print id</br>
+    Examples:</br>
+    | id   |</br>
+    | 3001 |</br>
+    | 3002 |</br>
+    | 3003 |</br>
+
+</br>
+
+![task4](https://user-images.githubusercontent.com/88919177/145688847-3a123c5f-dbe7-4058-9c9a-876c37ac3e4c.gif)
+
+
+
