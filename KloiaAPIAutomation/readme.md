@@ -29,7 +29,6 @@
 ![task1](https://user-images.githubusercontent.com/88919177/145682652-15206dcb-bfa7-4eda-9e19-bc73c78a13ed.gif)
 
 
-  ## Kata_2
    **Scenario: Get request to pet endpoint**</br>
      *Given* url 'https://petstore.swagger.io/v2/pet/250'</br>
      *When* method GET</br>
@@ -69,4 +68,54 @@
      *And* print response</br>
 </br>
 ![task2](https://user-images.githubusercontent.com/88919177/145683936-8da60236-1c72-4912-9e62-d657fcbde87a.gif)
-
+</br>
+  ## Kata_2</br>
+    Background:</br>
+   *Given* url baseUrl</br>
+</br>
+  **Scenario: post request with json**</br>
+    *And* path 'pet'</br>
+    *And* def myBody = read('classpath:data/myJson.json')</br>
+    *And* set myBody.name = 'newName'</br>
+    *And* set myBody.id = 2022</br>
+    *And* request myBody</br>
+    *When* method POST</br>
+    *Then* status 200</br>
+    *And* match response.id == myBody.id</br>
+    *And* match response.name == myBody.name</br>
+    *And* match response.status == myBody.status</br>
+</br>
+  **Scenario Outline: get pet from table**</br>
+    *And* path 'pet',id</br>
+    *When* method GET</br></br>
+    *Then* status 200</br></br>
+    Examples:</br></br>
+      | id   |</br></br>
+      | 3001 |</br></br>
+      | 3002 |</br></br>
+      | 3003 |</br></br>
+</br>
+  **Scenario Outline: get data from csv**</br>
+    *And* path 'pet',id</br>
+    *When* method GET</br>
+    *Then* status 200</br>
+</br>
+    Examples:</br>
+    | read('classpath:data/data.csv') |</br>
+</br>
+  **Scenario Outline: post request from table**</br>
+    *And* path 'pet'</br>
+    *And* def myBody = read('classpath:data/myJson.json')</br>
+    *And* set myBody.id = id</br>
+    *And* set myBody.name = name</br>
+    *And* set myBody.status = status</br>
+    *And* request myBody</br>
+    *When* method POST</br>
+    *Then* status 200</br>
+</br>
+    Examples:</br>
+      | read('classpath:data/example.csv') |</br>
+      </br>
+      
+      ![task3](https://user-images.githubusercontent.com/88919177/145688586-82fbc2c8-3952-43b6-ac9b-b2ad446c0799.gif)
+</br>
