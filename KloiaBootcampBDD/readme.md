@@ -1,6 +1,6 @@
 # KloiaBootcampBDD
 >*includes* Selenium , Cucumber , JUnit , BDD , POM , Test Automation
-  ## Kata-I
+  ## Kata_1
    **Scenario: logo verification**</br>
      - *Given* homepage is open</br>
      - *And* I close the pop up</br>
@@ -9,7 +9,7 @@
    ![kat1](https://user-images.githubusercontent.com/88919177/145562389-0ed2dc13-4fe1-4d49-8053-152ae92370eb.gif)
 
 
-  ## Kata-II
+  ## Kata_2
    **Scenario: search result test**</br>
      - *Given* homepage is open</br>
      - *And* I close the pop up</br>
@@ -19,7 +19,7 @@
    ![kat2](https://user-images.githubusercontent.com/88919177/145562487-b46ef889-f069-4132-bc77-d75d2fdd786e.gif)
    
 
-  ## Kata-III
+  ## Kata_3
    **Scenario: sign in page verification**</br>
      - *Given* homepage is open</br>
      - *And* I close the pop up</br>
@@ -30,7 +30,7 @@
    ![kat3](https://user-images.githubusercontent.com/88919177/145562516-37ad7035-5072-4b48-95d7-3f7fba0ee6e2.gif)
 
    
-   ## Kata-IV
+   ## Kata_4
    **Scenario: credit card application page test**</br>
      - *Given* homepage is open</br>
      - *And* I close the pop up</br>
