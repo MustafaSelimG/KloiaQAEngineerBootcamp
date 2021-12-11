@@ -69,7 +69,7 @@
 ![task2](https://user-images.githubusercontent.com/88919177/145683936-8da60236-1c72-4912-9e62-d657fcbde87a.gif)
 </br>
   ## Kata_2
-   **Background**</br>
+   **Background:**</br>
    *Given* url baseUrl</br>
 </br>
   **Scenario: post request with json**</br>
@@ -120,7 +120,6 @@
 
 </br>
 
-  ## Kata_3
   **Scenario: reading data from json** </br>
     * def myVar = read('classpath:data/myJson.json') </br>
     * print myVar</br>
@@ -142,5 +141,23 @@
 
 ![task4](https://user-images.githubusercontent.com/88919177/145688847-3a123c5f-dbe7-4058-9c9a-876c37ac3e4c.gif)
 
+</br>
 
+  ## Kata_3 </br>
+   **Background:**</br>
+    *Given* url baseUrl </br>
+</br>
+  **Scenario: call post feature**</br>
+    * def callToPost = call read('classpath:callers/caller.feature@name=post')</br>
+    * match callToPost.responseStatus == 200</br>
+    * print callToPost.response</br>
+</br>
+  **Scenario: call get feature**</br>
+    * def myID = 1</br>
+    * def callToGet = call read('classpath:callers/caller.feature@name=get'){id: #(myID)}</br>
+    * match callToGet.response.id == myID</br>
+</br>
+  
+  ![task5](https://user-images.githubusercontent.com/88919177/145688921-8d14a5e2-f44b-4696-b226-9c4524719d18.gif)
+  
 
