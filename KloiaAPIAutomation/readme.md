@@ -16,14 +16,14 @@
 
   **Scenario: printing JSON file**</br>
     - * def myJson =</br>
-    - """</br>
-    -     {</br>
-    -     "id": 0,</br>
-    -     "name": 'example',</br>
-    -     "status": "available",</br>
-    - };</br>
-    - """</br>
+    -  """</br>
+    -      {</br>
+    -      "id": 0,</br>
+    -      "name": 'example',</br>
+    -      "status": "available",</br>
+    -  };</br>
+    -  """</br>
     - * print myJson </br>
   
-  
-    ![task1](https://user-images.githubusercontent.com/88919177/145682586-9be9e3b9-7101-4142-b74d-dbc514222e8c.gif)
+    ![task1](https://user-images.githubusercontent.com/88919177/145682606-b2f6f6ec-701a-4954-99b2-ea320c5da9df.gif)
+
