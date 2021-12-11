@@ -25,5 +25,7 @@
     -  """</br>
     - * print myJson </br>
   
-    ![task1](https://user-images.githubusercontent.com/88919177/145682606-b2f6f6ec-701a-4954-99b2-ea320c5da9df.gif)
+  
+  
+![task1](https://user-images.githubusercontent.com/88919177/145682652-15206dcb-bfa7-4eda-9e19-bc73c78a13ed.gif)
 
