@@ -1,4 +1,4 @@
-# Kloia Automation Bootcamp
+# Kloia Automation
 > *includes* Selenium , JUnit , POM , Test Automation
 
 
