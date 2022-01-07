@@ -15,7 +15,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class SimpleTests {
-    WebDriver driver;
+    private static WebDriver driver;
+
 
     @Before
     public void setup(){
@@ -66,12 +67,17 @@ public class SimpleTests {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         // Hello World gizli olarak html'de bulunduğu ancak gözükmediği için önceki metoddan farklı yazmamız gerekti.
         // loading geçene kadar beklememiz ardından Hello World'u aramamız gerekti.
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement loading = driver.findElement(By.id("loading"));
-        wait.until(ExpectedConditions.invisibilityOf(loading));
+//        wait.until(ExpectedConditions.invisibilityOf(loading));
+        waitForElement(loading);
         String title = driver.findElement(By.cssSelector("#finish>h4")).getText();
         Assert.assertEquals("Hello World!",title);
 
     }
 
+    public static void waitForElement(WebElement element){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.invisibilityOf(element));
+    }
 }
